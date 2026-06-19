@@ -11,8 +11,8 @@ As a result of the SQL analyses, the following key insights regarding the platfo
 ## 3. Development Process
 The project was developed in a systematic, step-by-step pipeline:
 1. **Environment Setup:** Configured a local Git repository and established the folder structure while using `.gitignore` to keep data files out of version control.
-2. **ETL Process:** Utilized Python to read multiple large CSV files and dynamically load them into a local SQLite database.
-3. **Data Analysis (SQL):** Formulated complex SQL queries involving aggregations (`GROUP BY`) and multiple table merges (`JOIN`) to answer specific business questions.
+2. **ETL Process & Schema Design:** Utilized Python to dynamically load CSV files into a local SQLite database. Additionally, created a `schema_design.sql` file to explicitly define table relationships using Primary and Foreign Keys.
+3. **Data Analysis (SQL):** Formulated complex SQL queries involving aggregations (`GROUP BY`), multiple table merges (`JOIN`), and strict filtering (`WHERE` order_status = 'delivered') to answer specific business questions accurately.
 4. **Data Visualization:** Converted the SQL query results into Pandas DataFrames and created informative charts using Matplotlib and Seaborn.
 
 ## 4. Challenging Parts of the Project
@@ -29,7 +29,7 @@ By the end of this project, I gained practical experience and learned:
 
 ## 6. Roles of Technologies Used
 * **Python:** Acted as the core engine for automation and data manipulation. It was used to read CSV files (via Pandas), execute SQL queries, and generate visual plots.
-* **SQL (SQLite):** Served as the relational database management system. It played the critical role of joining distributed datasets, grouping data, and aggregating metrics (e.g., counting customers, summing revenue) efficiently.
+* **SQL (SQLite):** Served as the relational database management system. It played the critical role of establishing table schemas, joining distributed datasets, filtering specific business conditions (e.g., delivered orders), and aggregating metrics efficiently.
 * **GitHub:** Played the essential role of version control and portfolio hosting. It tracked code changes systematically and provided a professional platform to present the final documentation and source code to evaluators.
 
 ## 7. Necessary Dependencies & How to Run
